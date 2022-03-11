@@ -46,7 +46,7 @@ def uniform_cost(source, destination):
 def main():
     print('ENTER SOURCE :', end=' ')
     source = input().strip()
-    print('ENTER GOAL :', end=' ')
+    print('ENTER DESTINATION :', end=' ')
     destination = input().strip()
     if source not in GRAPH or destination not in GRAPH:
         print('ERROR: CITY DOES NOT EXIST.')
