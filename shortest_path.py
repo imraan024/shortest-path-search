@@ -32,9 +32,7 @@ def dfs_paths(source, destination, path=None):
 
 def uniform_cost(source, destination):
     priority_queue, visited = PriorityQueue(), {}
-    print("priority queue ",priority_queue)
     priority_queue.put((0, source, [source]))
-    print("new priority queue", priority_queue)
     visited[source] = 0
     while not priority_queue.empty():
         (cost, vertex, path) = priority_queue.get()
